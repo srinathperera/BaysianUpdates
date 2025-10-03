@@ -53,11 +53,9 @@ def scenario_2():
     ci_correct_prior = 0.6
 
     #create a list of observations with random True or False
-    observations_count = 5
+    observations_count = 10
     observations = [random.choice([True, False]) for _ in range(observations_count)]
-    test_prior = 0.6
-    #random number between 0.4 and 0.8
-    test_correctness_p_list = [random.uniform(0.2, 0.8) for _ in range(observations_count)]
+    test_correctness_p_list = [random.uniform(0.1, 0.7) for _ in range(observations_count)]
 
     for i,observation in enumerate(observations):
         print(f"Observation {i} is {observation}")
